@@ -9,7 +9,7 @@ pipeline {
       stage('build') {
          steps {
             echo 'compile users service'
-            dir('java/cmad-ms-ussers'){
+            dir('java/cmad-ms-users'){
             	sh 'mvn compile'
             }
          }
@@ -17,7 +17,7 @@ pipeline {
       stage('test') {
          steps {
             echo 'run unit tests'
-            dir('java/cmad-ms-ussers'){
+            dir('java/cmad-ms-users'){
             	sh 'mvn clean test'
             }
             
@@ -26,7 +26,7 @@ pipeline {
      stage('package') {
          steps {
             echo 'package users service'
-            dir('java/cmad-ms-ussers'){
+            dir('java/cmad-ms-users'){
             	sh 'mvn package -DskipTests'
             }
             
