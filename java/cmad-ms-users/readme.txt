@@ -1,4 +1,5 @@
- Build the application
+ 22 :wq
+Build the application
 1. Setup MongoDB server and update the application.properties accordingly, if needed
 
 2. Start the application
