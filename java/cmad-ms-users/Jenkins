@@ -1,4 +1,6 @@
 pipeline {
+
+   agent none
    
    tools{
      maven 'Maven 3.6.1'
@@ -80,5 +82,5 @@ pipeline {
          always{
              echo 'the job is complete'
          }
-}
+   }
 }
